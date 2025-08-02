@@ -37,16 +37,13 @@ Car-Price-Prediction/
 
 3. Exploratory Data Analysis (EDA)
 
-
  Distribution of Selling Price
 
-![Selling Price Distribution](visuals/selling_price_distribution.png)
 **Interpretation:**
 The majority of used cars are sold at prices below ₹10 lakhs. There's a strong right skew, with very few cars priced above ₹20 lakhs.
 
  **Count of Cars by Owner Type**
 
-![Owner Type](visuals/owner_type_count.png)
 **Interpretation:**
 Most cars are first-hand (Owner = 0). Second-hand and third-hand cars form a small portion, suggesting newer or better-maintained cars are preferred for resale.
 
@@ -55,12 +52,12 @@ Most cars are first-hand (Owner = 0). Second-hand and third-hand cars form a sma
 | Model                               | R² Score | MSE    | Interpretation                                                                               |
 | ----------------------------------- | -------- | ------ | -------------------------------------------------------------------------------------------- |
 | **Linear Regression**               | 0.8489   | 3.4813 | Decent baseline model, but struggles with non-linear patterns.                               |
-| **Random Forest**                   | 0.9623 ✅ | 0.8689 | Excellent performance. Captures complex relationships and handles categorical features well. |
+| **Random Forest**                   | 0.9623   | 0.8689 | Excellent performance. Captures complex relationships and handles categorical features well. |
 | **XGBoost**                         | 0.9524   | 1.0956 | Competitive model, slightly underperforms compared to Random Forest.                         |
 | **Decision Tree**                   | 0.9449   | 1.2683 | Good performance, but slightly prone to overfitting.                                         |
 | **SVR (Support Vector Regression)** | 0.7813   | 5.0372 | Underperforms compared to tree-based models.                                                 |
 | **Ridge Regression**                | 0.8484   | —      | Similar to Linear Regression, regularized.                                                   |
-| **Lasso Regression**                | 0.6804 ❌ | —      | Performs worst due to feature elimination effect.                                            |
+| **Lasso Regression**                | 0.6804   | —      | Performs worst due to feature elimination effect.                                            |
 
 **Best Model: Random Forest Regressor**
 
@@ -91,7 +88,7 @@ Most cars are first-hand (Owner = 0). Second-hand and third-hand cars form a sma
 *  **Random Forest** is the most accurate and robust model for this task.
 *  Data is skewed; log transformations could help for linear models.
 
- **6. Setup Instructions**
+ **7. Setup Instructions**
 
 #### Install Requirements
 
