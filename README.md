@@ -1,29 +1,11 @@
 # CODEALPHA_3
 
-Task 3: Car Price Prediction using Machine Learning
+## Task 3: Car Price Prediction using Machine Learning
+
 Predicting the selling price of used cars using regression models with visual analysis and model comparison.
 
-1. Project Structure
 
-```
-Car-Price-Prediction/
-│
-├── README.md
-├── car_price_prediction.ipynb
-├── requirements.txt
-├── dataset/
-│   └── car_data.csv
-├── visuals/
-│   ├── selling_price_distribution.png
-│   ├── owner_type_count.png
-│   └── ... other plots
-└── models/
-    ├── linear_regression.pkl
-    ├── random_forest.pkl
-    └── xgboost.pkl
-```
-
- 2. Features Used
+ ## 1. Features Used
 
 * `Car_Name`
 * `Year`
@@ -35,9 +17,9 @@ Car-Price-Prediction/
 * `Transmission`
 * `Owner`
 
-3. Exploratory Data Analysis (EDA)
+## 2. Exploratory Data Analysis (EDA)
 
- Distribution of Selling Price
+## Distribution of Selling Price
 
 **Interpretation:**
 The majority of used cars are sold at prices below ₹10 lakhs. There's a strong right skew, with very few cars priced above ₹20 lakhs.
@@ -47,7 +29,7 @@ The majority of used cars are sold at prices below ₹10 lakhs. There's a strong
 **Interpretation:**
 Most cars are first-hand (Owner = 0). Second-hand and third-hand cars form a small portion, suggesting newer or better-maintained cars are preferred for resale.
 
- **4. Model Performance Comparison**
+ ## **3. Model Performance Comparison**
 
 | Model                               | R² Score | MSE    | Interpretation                                                                               |
 | ----------------------------------- | -------- | ------ | -------------------------------------------------------------------------------------------- |
@@ -61,7 +43,7 @@ Most cars are first-hand (Owner = 0). Second-hand and third-hand cars form a sma
 
 **Best Model: Random Forest Regressor**
 
- **5. Workflow Steps**
+ ## **4. Workflow Steps**
 
 1. **Data Preprocessing**
 
@@ -81,26 +63,14 @@ Most cars are first-hand (Owner = 0). Second-hand and third-hand cars form a sma
 
    * Saved top models (Random Forest, XGBoost) using `joblib`.
 
- **6. Final Insights**
+## **5. Final Insights**
 
 *  Most cars are **first-hand** and under ₹10 lakhs.
 *  Features like **Present Price**, **Car Age**, and **Fuel Type** are most influential.
 *  **Random Forest** is the most accurate and robust model for this task.
 *  Data is skewed; log transformations could help for linear models.
 
- **7. Setup Instructions**
 
-#### Install Requirements
-
-```bash
-pip install -r requirements.txt
-```
-
- Run the Jupyter Notebook
-
-```bash
-jupyter notebook car_price_prediction.ipynb
-```
 
 
 
